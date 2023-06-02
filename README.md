@@ -1,31 +1,40 @@
-MarsPhotos - Starter Code
+Explore The Red Planet
 ==================================
 
-Starter code for [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course).
+The Mars Photo Viewer App is an Android application that allows users to view photos of Mars captured by various missions and available on an internet server. With this app, users can explore and discover stunning images of the Martian landscape right from their Android devices.
 
-Introduction
+Screenshots
 ------------
+![mars1](https://github.com/Tereshchenko22/Explore-The-Red-Planet/assets/98280660/d656d837-7980-4d62-8dbe-245e699e17fc)
+![mars2](https://github.com/Tereshchenko22/Explore-The-Red-Planet/assets/98280660/5ff0ed80-641d-4b86-b16b-b1cc1f7ba82b)
 
-Using this stater code you will create MarsPhotos is a demo app that shows actual images of Mar's surface. These images are
-real-life photos from Mars captured by NASA's Mars rovers. The data is stored on a Web server
-as a REST web service.  The solution app will demonstrate the use of [Retrofit](https://square.github.io/retrofit/) to make REST requests to the web service, [Moshi](https://github.com/square/moshi) to
-handle the deserialization of the returned JSON to Kotlin data objects, and [Coil](https://coil-kt.github.io/coil/) to load images by URL.
+Installation
+------------
+1. Clone the repository to your local machine using the following command:
+git clone https://github.com/Tereshchenko22/Explore-The-Red-Planet
 
-The app also leverages [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel),
-[LiveData](https://developer.android.com/topic/libraries/architecture/livedata), and
-[Data Binding](https://developer.android.com/topic/libraries/data-binding/) with binding 
-adapters.
+2. Open the project in Android Studio.
 
-Pre-requisites
+3. Build the project to ensure that all dependencies are resolved.
+
+4. Connect an Android device or use an emulator with API level 26 or higher.
+
+5. Run the app on the device/emulator using Android Studio.
+
+Permissions
 --------------
+The Mars Photo Viewer App requires the following permissions:
 
-You need to know:
-- How to create and use fragments.
-- How to use architecture components including ViewModel, and LiveData.
-- How to use coroutines for long-running tasks.
+- Internet access to fetch photos from the internet server.
 
 
-Getting Started
+Technologies Used
 ---------------
 
-1. Download and run the app.
+- Kotlin: The app is developed using the Kotlin programming language.
+- Android Architecture Components: The app follows the recommended Android architectural guidelines and utilizes components like ViewModel, LiveData.
+- Retrofit: Used for making API requests to fetch the photos from the internet server.
+- Moshi: Used for parsing JSON  into Kotlin classes.
+- Coil: Used for fast image loading by Coroutines 
+- RecyclerView: Used for displaying the photo collection in a scrollable list.
+
